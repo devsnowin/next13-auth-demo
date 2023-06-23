@@ -1,6 +1,6 @@
 'use client';
 
-import { useSession } from 'next-auth/react';
+import { signOut, useSession } from 'next-auth/react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -32,20 +32,20 @@ export default function Navbar() {
               className="border-2 border-primary mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/" className="justify-between p-2">
+                <Link href="/profile" className="justify-between p-2">
                   Profile
                   {/* <span className="badge">New</span> */}
                 </Link>
               </li>
               <li>
-                <Link href="/" className="p-2">
+                <Link href="/settings" className="p-2">
                   Settings
                 </Link>
               </li>
               <li>
-                <Link href="/" className="p-2">
+                <button className="p-2" onClick={() => signOut()}>
                   Logout
-                </Link>
+                </button>
               </li>
             </ul>
           </div>

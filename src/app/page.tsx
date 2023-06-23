@@ -10,7 +10,7 @@ export default function Home() {
         tempore commodi veniam ipsam doloribus esse doloremque, quia, aliquid
         quo?
       </p>
-      <Link href="/app" className="btn btn-primary">
+      <Link href="/app" className="btn btn-primary capitalize">
         Get started
       </Link>
     </main>
