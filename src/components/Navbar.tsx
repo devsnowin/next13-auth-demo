@@ -32,13 +32,13 @@ export default function Navbar() {
               className="border-2 border-primary mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link href="/profile" className="justify-between p-2">
+                <Link href="/app/profile" className="justify-between p-2">
                   Profile
                   {/* <span className="badge">New</span> */}
                 </Link>
               </li>
               <li>
-                <Link href="/settings" className="p-2">
+                <Link href="/app/settings" className="p-2">
                   Settings
                 </Link>
               </li>

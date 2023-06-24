@@ -2,6 +2,7 @@ import AuthProvider from '@/context/Auth';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Link from 'next/link';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata = {
   title: 'Next Demo',
@@ -19,6 +20,7 @@ export default function RootLayout({
         <AuthProvider>
           <Navbar />
           {children}
+          <Toaster position="bottom-right" />
           <footer className="grid place-items-center py-2">
             <p>
               @2023. Made by{' '}
